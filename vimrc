@@ -35,3 +35,7 @@ set background=dark
 
 " leader testing. normally not a big leader fan
 map <Space> <Leader>
+
+" Status bar
+set laststatus=2
+set statusline=%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
