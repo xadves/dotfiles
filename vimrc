@@ -1,3 +1,6 @@
+" Enable Syntax Highlighting
+syntax enable
+
 " Sets Visible Numbers on the lefthand side
 set number
 
@@ -29,3 +32,6 @@ catch
 endtry
 
 set background=dark
+
+" leader testing. normally not a big leader fan
+map <Space> <Leader>
