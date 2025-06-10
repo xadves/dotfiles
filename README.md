@@ -1,5 +1,7 @@
 # Dotfiles
 
-## vimrc -> .vimrc
+## VimRC
+`ln -s ~/dotfiles/vimrc .vimrc`
 
-## authorized_keys -> .ssh/authorized_keys
+## Authorized Keys
+`ln -s ~/dotfiles/authorized_keys .ssh/authorized_keys`
