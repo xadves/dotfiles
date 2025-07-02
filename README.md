@@ -1,7 +1,16 @@
 # Dotfiles
 
 ## VimRC
-`ln -s ~/dotfiles/vimrc .vimrc`
+```bash
+ln -s ~/dotfiles/vimrc .vimrc`
+```
 
 ## Authorized Keys
-`ln -s ~/dotfiles/authorized_keys .ssh/authorized_keys`
+```bash
+ln -s ~/dotfiles/authorized_keys .ssh/authorized_keys`
+```
+
+## Tmux
+```bash
+ln -s ~/dotfiles/tmux.conf .tmux.conf
+```
