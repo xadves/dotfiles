@@ -1,16 +1,22 @@
 # Dotfiles
 
+Define a Home directory where you want to link these files
+
+```bash
+HOMEDIR=~
+```
+
 ## VimRC
 ```bash
-ln -s ~/dotfiles/vimrc .vimrc`
+ln -s $(pwd)/vimrc $HOMEDIR/.vimrc`
 ```
 
 ## Authorized Keys
 ```bash
-ln -s ~/dotfiles/authorized_keys .ssh/authorized_keys`
+ln -s $(pwd)/authorized_keys $HOMEDIR/.ssh/authorized_keys`
 ```
 
 ## Tmux
 ```bash
-ln -s ~/dotfiles/tmux.conf .tmux.conf
+ln -s $(pwd)/tmux.conf $HOMEDIR/.tmux.conf
 ```
