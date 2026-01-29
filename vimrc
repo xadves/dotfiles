@@ -32,10 +32,27 @@ catch
 endtry
 
 set background=dark
+highlight MatchParen ctermfg=yellow ctermbg=red cterm=NONE 
 
 " leader testing. normally not a big leader fan
 map <Space> <Leader>
 
 " Status bar
 set laststatus=2
-set statusline=%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+set statusline=%y\ %F%m%r%h\ %w\ %r%{getcwd()}%h\ \ \ Line:\ %l\ /%L\ \ Column:\ %c
+
+" Turn Invisible Characters
+"set invlist
+
+" Automatically Indent on New Lines
+set autoindent
+
+" Be nice with file width
+set colorcolumn=80
+
+" Handle Tabs
+set tabstop=2
+autocmd BufEnter *.yaml setlocal shiftwidth=2
+autocmd BufEnter *.yaml setlocal expandtab
+autocmd BufEnter *.yml setlocal shiftwidth=2
+autocmd BufEnter *.yml setlocal expandtab
